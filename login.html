@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
 <body>
     <main>
-        <h1>Tela de Login</h1>
-        <section>
+        <h1 id="titulo">Tela de Login</h1>
+        <section id="login">
             <div id="img">
-                <img src="imagens/pexels-it-s-mj-1143455268-20954944.jpg" alt="">
+
             </div>
             <div id="form">
-                <form action="login.php" method="post"></form>
+                <h1>Login</h1>
+                <p>Seja Bem Vindo! Por favor, faça seu login para continuar e acessar sua conta.</p>
+                <form action="login.php" method="post" autocomplete="on">
+
+                    <div id="mail" class="campo">
+                        <span class="material-symbols-outlined">mail</span>
+                        <label for="iemail" style="display: none;">Email: </label>
+                        <input type="email" name="email" id="iemail" required autocomplete="email" maxlength="30" placeholder=" E-mail"><br>
+                    </div>
+
+                    <div id="senha" class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <label for="isenha" style="display: none;">Senha: </label>
+                        <input type="password" name="senha" id="isenha" required autocomplete="current-password" minlength="8" maxlength="20" placeholder=" Senha">
+                    </div>
+
+                    <input id="entrar" type="submit" value="Entrar">
+
+                    <a id="esqueci" href="criar.html">Esqueci a Senha<span class="material-symbols-outlined">mail</span></a> 
+                    <p style="text-align: center; margin-top: 15px;">Ou</p>
+                    <a id="criar" href="criar.html">Crie uma Conta!</a>
+                </form>
             </div>
         </section>
     </main>
