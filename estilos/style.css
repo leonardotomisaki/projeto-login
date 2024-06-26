@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*  Paleta de Cores
+----------------------
+    #012340
+    #2C5273
+    #517EA6
+    #759CBF
+    #C2DCF2
+----------------------
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
